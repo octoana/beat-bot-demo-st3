@@ -1,0 +1,31 @@
+# action.yml
+name: 'Smart Scan'
+description: 'This action decides whether or not to run a CodeQL scan in your PR'
+inputs:
+  gh_token: 
+    description: 'github token'
+    required: true
+  openai_api_key: 
+    description: 'OpenAI API Key'
+    required: true
+    default: ''
+  azure_api_key: 
+    description: 'Azure OpenAI Service API Key'
+    required: true
+    default: ''
+  azure_endpoint: 
+    description: 'Azure OpenAI Service Endpoint'
+    required: true
+    default: ''
+outputs:
+  decision:
+    description: 'decision on whether or not to run CodeQL'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+   - ${{ inputs.gh_token }}
+   - ${{ inputs.openai_api_key }}
+   - ${{ inputs.azure_api_key }}
+   - ${{ inputs.azure_endpoint }}
+

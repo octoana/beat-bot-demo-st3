@@ -1,5 +1,6 @@
-
-![Bot](https://github.com/octodemo/beat-bot/assets/4910518/32bebb68-f0c4-402a-bac0-f59778ae08f3)
+<p align="center">
+  <img src="https://github.com/octodemo/beat-bot/assets/4910518/a85f65ef-ef11-40b9-882e-dd722fd112ec">
+</p>
 
 # BeatBot
 
@@ -7,8 +8,9 @@ BeatBot is an AI-driven music service.  BeatBot reviews your listening behavoir 
 
 In all reality, it's just a demo but there are a lot of pretty pictures and text in the readme that make it look like a real app.  
 
-
-![image|50%](https://github.com/octodemo/beat-bot/assets/4910518/e382ed67-fbc2-48fb-9f3c-8e3b818f5c4f)
+<p align="center">
+  <img src="https://github.com/octodemo/beat-bot/assets/4910518/e382ed67-fbc2-48fb-9f3c-8e3b818f5c4f">
+</p>
 
 ## Features
 1. Rhythm Exploration

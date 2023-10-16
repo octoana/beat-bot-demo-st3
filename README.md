@@ -1,9 +1,5 @@
-<p align="center">
-  <img src="https://github.com/octodemo/beat-bot/assets/4910518/32bebb68-f0c4-402a-bac0-f59778ae08f3">
-</p>
 
-
-<!--![Bot](https://github.com/octodemo/beat-bot/assets/4910518/32bebb68-f0c4-402a-bac0-f59778ae08f3)-->
+![Bot](https://github.com/octodemo/beat-bot/assets/4910518/32bebb68-f0c4-402a-bac0-f59778ae08f3)
 
 # BeatBot
 

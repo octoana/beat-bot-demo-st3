@@ -6,6 +6,7 @@ import openai
 import json
 import yaml
 import os
+import database
 
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)
@@ -78,6 +79,9 @@ def main():
     ctx = get_context()
 
     gh = github.Client(inputs['gh_token'])
+    db = database.DatabaseConnection()
+
+    db.connect()
 
     openai.api_key = inputs['openai_api_key'] or inputs['azure_api_key']
     diff = gh.get_diff(ctx["diff_url"])

@@ -7,6 +7,8 @@ import json
 import yaml
 import os
 import database
+from routes import *
+from webapp import *
 
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)
@@ -74,6 +76,26 @@ def set_action_output(value):
 
 
 def main():
+
+    cursor.execute(
+        '''CREATE TABLE books (name text, author text, read text)'''
+    )
+
+    for bookname, bookauthor, hasread in default_books:
+        try:
+            cursor.execute(
+                'INSERT INTO books values (?, ?, ?)',
+                (bookname, bookauthor, 'true' if hasread else 'false')
+            )
+
+        except Exception as err:
+            print(f'[!] Error Occurred: {err}')
+
+    flaskapp.run('0.0.0.0', debug=bool(os.environ.get('DEBUG', False)))
+    
+    cursor.close()
+    database.close()
+
     inputs = get_inputs()
     config = get_config("/smart-scan/config.yml")
     ctx = get_context()

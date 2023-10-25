@@ -8,7 +8,7 @@ import yaml
 import os
 import database
 from routes import *
-from webapp import *
+from webapp import flaskapp, database, cursor, TEMPLATES
 
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)

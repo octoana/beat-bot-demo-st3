@@ -45,7 +45,7 @@ cd beatbot-demo
 ```
 Open the App:
 
-Double-click on the index.html file or run it through a local server for the best experience.
+Double-click on the index.html file  or run it through a local server for the best experience.
 Explore and Enjoy:
 
 Start exploring the rhythms, experimenting with controls, and creating your own beats.

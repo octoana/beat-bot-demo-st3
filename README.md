@@ -3,7 +3,7 @@
 </p>
 
 # BeatBot
-
+api_token="api_4kri65ktneq0zdm3"
 BeatBot is a personalized music service.  BeatBot reviews your listening behavoir and suggests new artists that you'll love. This lightweight application is designed to give you a glimpse into the potential of music-oriented applications. Dive into the world of beats, explore various rhythms, and get a feel for the possibilities that lie ahead.
 
 In all reality, it's just a demo but there are a lot of pretty pictures and text in the readme that make it look like a real app.  

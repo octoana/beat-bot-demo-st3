@@ -61,6 +61,6 @@ resource "azurerm_app_service" "beatbox-app-service" {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
     "DOCKER_REGISTRY_SERVER_URL" = "https://beatbox.azurecr.io"
     "DOCKER_REGISTRY_SERVER_USERNAME" = "beatbox"
-    "DOCKER_REGISTRY_SERVER_PASSWORD" = "hunter2-supers2cure!"
+    "DOCKER_REGISTRY_SERVER_PASSWORD" = ""
   }
 }

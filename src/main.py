@@ -8,6 +8,7 @@ import yaml
 import os
 import database
 from routes import *
+from endpoints import *
 from webapp import flaskapp, database, cursor, TEMPLATES
 
 

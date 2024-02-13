@@ -5,7 +5,7 @@ const app = require("express")(),
 app.get("search", function handler(req, res) {
   // BAD: the category might have SQL special characters in it
   var query1 =
-    "SELECT ITEM,FROM TABLE WHEREITEM_CATEGORY='" + req.params.category + "'";
+    "SELECT ITEM,FROM TABLE WHERE ITEM_CATEGORY='" + req.params.category + "'";
   pool.query(query1, [], function(err, results) {
     // process results
   });

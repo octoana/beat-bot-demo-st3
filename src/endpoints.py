@@ -1,5 +1,4 @@
 from flask import request, render_template, make_response
-
 from webapp import flaskapp, cursor
 from models import Book
 

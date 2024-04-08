@@ -8,7 +8,6 @@ let category = req.params.category;
 let encryptedCategory = CryptoJS.AES.encrypt(category, 'secret key 123').toString();
 
 // Use 'encryptedCategory' to query the database
-
 app.get("search", function handler(req, res) {
   // BAD: the category might have SQL special characters in it
   var query1 =

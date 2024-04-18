@@ -60,3 +60,5 @@ Feedback
 We'd love to hear your thoughts on BeatBot. If you encounter any issues or have suggestions, please open an issue.
 
 Happy exploring and creating with BeatBot! 🎶
+
+Testing a codeQL scan in my branch.

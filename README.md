@@ -61,4 +61,4 @@ We'd love to hear your thoughts on BeatBot. If you encounter any issues or have 
 
 Happy exploring and creating with BeatBot! 🎶
 
-Testing a codeQL scan in my branch.
+Testing a codeQL scan in my branch with a PR.

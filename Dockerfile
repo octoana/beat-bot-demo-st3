@@ -1,5 +1,5 @@
 FROM python:3.10
-ENV password="ffjsdlkvij4j&*(*("
+
 COPY . /
 RUN pip install -r requirements.txt
 

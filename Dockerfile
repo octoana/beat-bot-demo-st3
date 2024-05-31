@@ -1,7 +1,5 @@
 FROM python:3.10
 
-ENV PASSWORD="fhthisdgoi***^77"
-
 COPY . /
 RUN pip install -r requirements.txt
 

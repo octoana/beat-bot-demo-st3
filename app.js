@@ -7,7 +7,7 @@ const app = express();
 const { getStockPrice, getStockPrices, storeStockPrice } = require("./stocks");
 
 const testsecret =
-  "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";
+  "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";
 
 // get the stock price for a stock symbol
 app.get("/stock/:stockSymbol", async (req, res) => {

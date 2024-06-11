@@ -28,3 +28,19 @@ def index():
         books = [Book(*row) for row in cursor]
 
     return render_template('books.html', books=books)
+
+
+@flaskapp.route('/authors')
+def index():
+    author = request.args.get('author')
+
+    if author:
+        cursor.execute(
+            "SELECT DISTINCT author FROM books WHERE author LIKE '%" + author + "%'"
+        )
+    else:
+        cursor.execute("SELECT DISTINCT author FROM books")
+
+    authors = [row[0] for row in cursor.fetchall()]
+
+    return render_template('authors.html', authors=authors)

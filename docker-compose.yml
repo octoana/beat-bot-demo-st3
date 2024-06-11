@@ -1,0 +1,34 @@
+# docker compose to spin up a nodejs app and a mysql db and a redis server
+
+version: "3"
+
+services:
+  nodejs:
+    image: node:latest
+    container_name: nodejs
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+      - redis
+    command: npm start
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+    ports:
+      - "3306:3306"
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"

@@ -47,4 +47,12 @@ const storeStockPrice = async (stockSymbol, stockPrice) => {
   }
 };
 
-module.exports = { getStockPrice, getStockPrices, storeStockPrice };
+// create a method to get the stock price history
+const getStockPriceHistory = async (stockSymbol) => {
+  // Placeholder for getStockPriceHistory implementation
+  // This should fetch the stock price history for the given symbol
+  // For now, we'll just return a placeholder response
+  return "Stock price history feature is not implemented yet";
+};
+
+module.exports = { getStockPrice, getStockPrices, storeStockPrice, getStockPriceHistory };

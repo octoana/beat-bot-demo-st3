@@ -11,24 +11,52 @@ const testsecret =
 
 // get the stock price for a stock symbol
 app.get("/stock/:stockSymbol", async (req, res) => {
-  const stockSymbol = req.params.stockSymbol;
-  const stockPrice = await getStockPrice(stockSymbol);
-  res.json({ stockPrice });
+  try {
+    const stockSymbol = req.params.stockSymbol;
+    const stockPrice = await getStockPrice(stockSymbol);
+    res.json({ stockPrice });
+  } catch (error) {
+    console.error(`Error fetching stock price for symbol ${req.params.stockSymbol}: ${error}`);
+    res.status(500).json({ error: "Error fetching stock price" });
+  }
 });
 
 // get the stock prices for an array of stock symbols
 app.get("/stocks", async (req, res) => {
-  const stockSymbols = req.query.stockSymbols.split(",");
-  const stockPrices = await getStockPrices(stockSymbols);
-  res.json({ stockPrices });
+  try {
+    const stockSymbols = req.query.stockSymbols.split(",");
+    const stockPrices = await getStockPrices(stockSymbols);
+    res.json({ stockPrices });
+  } catch (error) {
+    console.error(`Error fetching stock prices: ${error}`);
+    res.status(500).json({ error: "Error fetching stock prices" });
+  }
 });
 
 // store the stock price in the database
 app.post("/stock/:stockSymbol", async (req, res) => {
-  const stockSymbol = req.params.stockSymbol;
-  const stockPrice = await getStockPrice(stockSymbol);
-  await storeStockPrice(stockSymbol, stockPrice);
-  res.json({ message: "Stock price stored in the database" });
+  try {
+    const stockSymbol = req.params.stockSymbol;
+    const stockPrice = await getStockPrice(stockSymbol);
+    await storeStockPrice(stockSymbol, stockPrice);
+    res.json({ message: "Stock price stored in the database" });
+  } catch (error) {
+    console.error(`Error storing stock price for symbol ${req.params.stockSymbol}: ${error}`);
+    res.status(500).json({ error: "Error storing stock price" });
+  }
+});
+
+// get the stock price history for a stock symbol
+app.get("/stock/history/:stockSymbol", async (req, res) => {
+  try {
+    // Placeholder for getStockPriceHistory implementation
+    // This should fetch the stock price history for the given symbol
+    // For now, we'll just return a placeholder response
+    res.json({ message: "Stock price history feature is not implemented yet" });
+  } catch (error) {
+    console.error(`Error fetching stock price history for symbol ${req.params.stockSymbol}: ${error}`);
+    res.status(500).json({ error: "Error fetching stock price history" });
+  }
 });
 
 app.listen(3000, () => {

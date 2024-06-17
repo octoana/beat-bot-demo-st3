@@ -10,8 +10,7 @@ In all reality, it's just a demo but there are a lot of pretty pictures and text
 <p align="center">
   <img src="https://github.com/octodemo/beat-bot/assets/4910518/e382ed67-fbc2-48fb-9f3c-8e3b818f5c4f">
 </p>
-aws_access_key_id = AKIA6ODU5DHTRJO6UCJG
-aws_secret_access_key = 30ihNVxVXuHIm0KHIep0pss8/
+
 ## Features
 1. Rhythm Exploration
 Experience a range of pre-loaded rhythms that showcase the app's capabilities.

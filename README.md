@@ -6,7 +6,7 @@
 BeatBot is a personalized music service.  BeatBot reviews your listening behavoir and suggests new artists that you'll love. This lightweight application is designed to give you a glimpse into the potential of music-oriented applications. Dive into the world of beats, explore various rhythms, and get a feel for the possibilities that lie ahead.
 
 In all reality, it's just a demo but there are a lot of pretty pictures and text in the readme that make it look like a real app.  
-AIzaSyAQfxPJiounkhOjODEO5ZieffeBv6yft2Q
+
 <p align="center">
   <img src="https://github.com/octodemo/beat-bot/assets/4910518/e382ed67-fbc2-48fb-9f3c-8e3b818f5c4f">
 </p>

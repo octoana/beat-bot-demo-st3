@@ -1,5 +1,6 @@
+--index-url https://artifactory.internal.company/artifactory/api/pypi/pypi-virtual/simple
+--trusted-host artifactory.internal.company
 
-# Core dependencies
 requests==2.21.0
 
 

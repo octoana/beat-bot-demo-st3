@@ -1,6 +1,6 @@
 
 # Core dependencies
-requests==1.31.0
+requests==2.21.0
 
 
 

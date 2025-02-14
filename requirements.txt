@@ -1,3 +1,13 @@
+--index-url https://artifactory.internal.company/artifactory/api/pypi/pypi-virtual/simple
+--trusted-host artifactory.internal.company
+
+# Core dependencies
+requests==1.31.0
+pandas==2.2.0
+numpy>=1.24.0
+flask==3.0.0
+
+
 aiohttp==3.8.5
 aiosignal==1.3.1
 async-timeout==4.0.3

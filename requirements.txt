@@ -18,7 +18,6 @@ Pillow==11.1.0
 protobuf==6.30.0
 pyOpenSSL==25.0.0
 PyYAML==6.0.2
-Sphinx==8.2.3
 thread==2.0.5
 tornado==6.4.2
 truststore==0.10.1

@@ -21,5 +21,4 @@ PyYAML==6.0.2
 thread==2.0.5
 tornado==6.4.2
 truststore==0.10.1
-urllib3_secure_extra==0.1.0
 xmlrpclib==1.0.1

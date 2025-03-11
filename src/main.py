@@ -10,6 +10,8 @@ import database
 from routes import *
 from webapp import flaskapp, database, cursor, TEMPLATES
 
+# APS to test the octocat custom pattern
+octocat_secret_custom_pattern = 'octocat_token_abdvc23657'
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)

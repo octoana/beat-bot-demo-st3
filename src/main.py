@@ -10,6 +10,9 @@ import database
 from routes import *
 from webapp import flaskapp, database, cursor, TEMPLATES
 
+# APS test push protection partner secret
+aws_access_key_id = 'AKIAT4GVSAXXO3AJWN5Z'
+aws_secret_access_key = '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'
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)

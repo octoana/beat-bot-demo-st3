@@ -10,6 +10,10 @@ import database
 from routes import *
 from webapp import flaskapp, database, cursor, TEMPLATES
 
+# test canary
+aws_access_key_id = 'AKIAT4GVSAXXFULFOS2C'
+aws_secret_access_key = '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'
+
 # APS to test the octocat custom pattern
 octocat_secret_custom_pattern = 'octocat_token_abdvc23657'
 

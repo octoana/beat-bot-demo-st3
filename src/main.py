@@ -20,6 +20,9 @@ console_formatter = logging.Formatter("%(levelname)s: %(message)s")
 console_handler.setFormatter(console_formatter)
 logging.getLogger().addHandler(console_handler)
 
+# APS testing AI powered secret scan 
+api_user = "admininstrator" 
+api_password = "Tesla2021" 
 
 # retrieve inputs from the workflow file
 def get_inputs():

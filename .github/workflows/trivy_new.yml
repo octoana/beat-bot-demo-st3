@@ -42,15 +42,15 @@ jobs:
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'
-
-      - name: Upload sarif to Artifacts for debugging
-        uses: actions/upload-artifact@v4
-        with:      
-          name: Trivy SARIF
-          path: /home/runner/work/beat-bot-demo-st3/beat-bot-demo-st3/trivy-results.sarif
       
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results.sarif'
-          
+
+      - name: Upload sarif to Artifacts for debugging - after fingerprinting added
+        uses: actions/upload-artifact@v4
+        with:      
+          name: Trivy SARIF
+          path: /home/runner/work/beat-bot-demo-st3/beat-bot-demo-st3/trivy-results.sarif
+

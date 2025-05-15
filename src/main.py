@@ -14,7 +14,7 @@ from webapp import flaskapp, database, cursor, TEMPLATES
 octocat_secret_custom_pattern = 'octocat_token_abdvc23657'
 
 # test token
-gh-tk = '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'
+gh_tk = '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'
 
 logging.basicConfig(filename="logging.log", level=logging.INFO)
 console_handler = logging.StreamHandler(sys.stdout)

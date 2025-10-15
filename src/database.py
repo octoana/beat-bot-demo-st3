@@ -1,3 +1,4 @@
+# kick codeQL
 import mysql.connector
 
 
